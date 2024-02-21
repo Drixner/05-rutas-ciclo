@@ -1,16 +1,11 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <ListPage />
 </template>
 
 <script>
-import ListPage from "@/modules/pokemon/pages/ListPage";
-
 export default {
   name: "App",
-  components: {
-    ListPage,
-  },
+  components: {},
 };
 </script>
 
