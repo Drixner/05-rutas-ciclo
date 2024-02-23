@@ -25,7 +25,6 @@ const routes = [
   //   pagina 404
   {
     path: "/:pathMatch(.*)*",
-    name: "not-found",
     component: () =>
       import(
         /*webpackChunkName: "NoPageFound"*/ "@/modules/shared/pages/NoPageFound"
