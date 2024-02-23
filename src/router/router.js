@@ -1,23 +1,35 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
-import ListPage from "@/modules/pokemon/pages/ListPage";
-import PokemonPage from "@/modules/pokemon/pages/PokemonPage";
-
 const routes = [
-  { path: "/", component: ListPage },
+  {
+    path: "/",
+    component: () =>
+      import(
+        /*webpackChunkName: "listPage"*/ "@/modules/pokemon/pages/ListPage"
+      ),
+  },
   {
     path: "/about",
     component: () =>
       import(
-        /*webpackChunkName: AboutPage*/ "@/modules/pokemon/pages/AboutPage.vue"
+        /*webpackChunkName: "AboutPage"*/ "@/modules/pokemon/pages/AboutPage"
       ),
   },
-  { path: "/id", component: PokemonPage },
+  {
+    path: "/id",
+    component: () =>
+      import(
+        /*webpackChunkName: "PokemonPage"*/ "@/modules/pokemon/pages/PokemonPage"
+      ),
+  },
   //   pagina 404
   {
     path: "/:pathMatch(.*)*",
     name: "not-found",
-    component: () => import("@/modules/shared/pages/NoPageFound.vue"),
+    component: () =>
+      import(
+        /*webpackChunkName: "NoPageFound"*/ "@/modules/shared/pages/NoPageFound"
+      ),
   },
 ];
 
