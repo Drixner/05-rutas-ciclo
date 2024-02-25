@@ -8,17 +8,16 @@
 
 <style scoped>
 div {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  padding: 0 20px;
+  padding: 0 30px;
 }
+
 div a {
   font-weight: bold;
   color: #2c3e50;
   margin: 0 10px;
 }
-.router-link-exact-active {
-  color: #42b983;
-}
+
+/* a.router-link-exact-active {
+    color: #42b983;
+} */
 </style>
