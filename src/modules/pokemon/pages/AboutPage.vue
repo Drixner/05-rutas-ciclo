@@ -5,8 +5,8 @@
     <hr />
     <h2>
       {{ name }}
-      <button @click="onChangeName"></button>
     </h2>
+    <button @click="onChangeName">cambiar nombre</button>
   </div>
 </template>
 <script>
@@ -15,6 +15,11 @@ export default {
     return {
       name: "Drixner",
     };
+  },
+  methods: {
+    onChangeName() {
+      this.name = "Rafael";
+    },
   },
   beforeCreate() {
     console.log("AboutPage beforeCreate");
