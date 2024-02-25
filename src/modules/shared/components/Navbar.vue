@@ -2,7 +2,7 @@
   <div>
     <router-link to="/">Pokemon List</router-link>
     <router-link to="/id">Pokemon por id </router-link>
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">Sobre</router-link>
   </div>
 </template>
 
