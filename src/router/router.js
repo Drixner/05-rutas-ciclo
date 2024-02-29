@@ -32,9 +32,9 @@ const routes = [
       ),
   },
 ];
+// esto es otro comentario
 
 // esta es una forma de hacerlo
-// esto es otro comentario
 
 const router = createRouter({
   history: createWebHashHistory(),
