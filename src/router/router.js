@@ -22,6 +22,10 @@ const routes = [
       import(
         /*webpackChunkName: "PokemonPage"*/ "@/modules/pokemon/pages/PokemonPage"
       ),
+    props: (route) => {
+      const id = Number(route.params.id);
+      return isNaN(id) ? { id: 1 } : { id };
+    },
   },
   //   pagina 404
   {
