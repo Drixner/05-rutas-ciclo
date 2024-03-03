@@ -1,3 +1,4 @@
+import { preventExtensions } from "core-js/core/object";
 import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
@@ -15,16 +16,21 @@ const routes = [
         /*webpackChunkName: "AboutPage"*/ "@/modules/pokemon/pages/AboutPage"
       ),
   },
-  { 
-    path: 'pokemonid/:id',
-    name: 'pokemon-id',
-    component: () => import(/* webpackChunkName: "PokemonPage" */ '@/modules/pokemon/pages/PokemonPage'),
-    props: ( route ) => {
-        const id = Number( route.params.id );
-        return isNaN( id ) ? { id: 1 } : { id }
-    }
+  {
+    path: "/:id",
+    name: "Pokemon-id",
+    component: () =>
+      import(
+        /*webpackChunkName: "PokemonPage"*/ "@/modules/pokemon/pages/PokemonPage"
+      ),
+    props: (route) => {
+      const id = Num(route.params.id);
+      return isNaN(id) ? { id: 1 } : { id };
+    },
   },
   //   pagina 404
+  
+  // estos es una prueba
   {
     path: "/:pathMatch(.*)*",
     component: () =>
