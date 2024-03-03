@@ -33,7 +33,7 @@ const routes = [
   // estos es una prueba
   {
     path: "/:pathMatch(.*)*",
-    component: () =>
+  component: () =>
       import(
         /*webpackChunkName: "NoPageFound"*/ "@/modules/shared/pages/NoPageFound"
       ),
