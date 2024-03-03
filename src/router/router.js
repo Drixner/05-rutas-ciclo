@@ -36,8 +36,8 @@ const routes = [
   component: () =>
       import(
         /*webpackChunkName: "NoPageFound"*/ "@/modules/shared/pages/NoPageFound"
-      ),
-  },
+      )
+  }
 ];
 
 const router = createRouter({
