@@ -29,9 +29,6 @@ const routes = [
     },
   },
   //   pagina 404
-  
-  // estos es una prueba
-  // esto es otra prueba
 
   {
     path: "/:pathMatch(.*)*",
