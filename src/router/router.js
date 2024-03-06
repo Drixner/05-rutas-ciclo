@@ -1,4 +1,3 @@
-import { preventExtensions } from "core-js/core/object";
 import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [

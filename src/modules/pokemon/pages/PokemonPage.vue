@@ -17,14 +17,14 @@ export default {
 
   data() {
     return {
-      id: this.$route.params.id,
+      // id: this.$route.params.id,
     };
   },
 
   created() {
-    const { id } = this.$route.params;
-    console.log(id);
-    // this.id = id;
+    // const { id } = this.$route.params;
+    // console.log(id);
+    // // this.id = id;
   },
 };
 </script>
