@@ -27,7 +27,6 @@ const routes = [
       return isNaN(id) ? { id: 1 } : { id };
     },
   },
-  //   pagina 404
 
   {
     path: "/:pathMatch(.*)*",
@@ -46,4 +45,4 @@ const router = createRouter({
 // esto es un comentario para probar el git
 
 
-export default router;
+export default router
